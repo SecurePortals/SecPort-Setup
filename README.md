@@ -10,7 +10,7 @@ Documentation and Scripts to setup proper environment and dummy data
 >Python is an object-oriented scripting language that in recent years has become popular for backend processing and web services.
 
 ## What is Django?
->Django is a relational database framework that responds to Python and simplifies interactions with the database
+>Django is a relational database framework that responds to Python and simplifies interactions with the database.
 
 ## Why Python and Django over other workflows?
 >Python is easy to learn and reduces development time considerably. Django is also free Open-Source which allows us to develop Web Applications without paying for costly software. 
