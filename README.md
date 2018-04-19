@@ -5,6 +5,7 @@ Documentation and Scripts to setup proper environment and dummy data
 >1. Instructions to install latest stable version of Python 3.6 via Terminal (Python3_6.md)
 >2. Instructions to install Django 2.1 and Django development environment (Django2_1.md)
 >3. Startup scripts to initialize dummy data and tables (init)
+>4. Outline of current/proposed projects (Documentation/project_docs.docx)
 
 ## What is Python?
 >Python is an object-oriented scripting language that in recent years has become popular for backend processing and web services.
