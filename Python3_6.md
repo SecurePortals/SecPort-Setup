@@ -50,15 +50,21 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 >Simply run the following code in Terminal: 
 
 ```bsh
-brew install python3
+brew install python
 ```
 
-Make sure the right Python version is installed:
+>And afterwards run:
+
 ```bsh
-python3 --version
+brew postinstall python
 ```
 
->If it doesn't say Python 3.6.x (x is a wildcard which represents any number), then there are extra steps that need to be taken to complete installing Python 3!
+>Make sure the right Python version is installed:
+```bsh
+python --version
+```
+>If it doesn't say Python 3.6.x (x is a wildcard which represents any number), then there are extra steps that need to be taken to complete installing Python 3! You may have to go back to the Install Python steps, but instead of installing 'python', install 'python3'.
+
 
 >Next, we install Django 2.1!
 
