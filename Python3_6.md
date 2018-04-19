@@ -21,6 +21,23 @@
 ### Install Homebrew
 >Follow the directions on this link: https://brew.sh/#install
 
+### Making changes to .bash_profile
+>There's a lot of stuff coming and going... and your computer doesn't know how to keep track of all these things! We gotta tell the OS through a file called '.bash_profile', where things are, so that it won't get confused. We have to first open the file, then add a line of code, and then save it. Let me break it down for you:
+
+```bsh
+nano ~/.bash_profile
+```
+
+>Nano is a text editor built into Bash (we'll talk about what Bash is in a little bit). It is my favorite because it is easy to edit lots of text, and the options are inside of the Terminal window while you're using it. By calling 'nano <text file path>' we're executing the Nano text editor, and telling it to open the file that we put in the path. The '~/' is put at the beginning of a path to say "start in my current folder", and the name of the file is '.bash_profile'.
+  
+> After we've opened the file, we need to paste the following line of code at the bottom of the text editor:
+
+```bsh
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+```
+
+>In order to save and exit Nano, you hit 'control-x', then 'y', then enter. 'control-x', says "I want to close this file", then Nano says, "Do you want to save your changes?" so you hit 'y', and then you hit enter to complete the exit process.
+
 ### Intro to Python
 >Python is an example of a 'package' that Homebrew can install. Now that we have XCode and Homebrew, we can install Python through the Terminal (also known as the Command Line). 
 
@@ -38,8 +55,10 @@ brew install python3
 
 Make sure the right Python version is installed:
 ```bsh
-python --version
+python3 --version
 ```
 
 >If it doesn't say Python 3.6.x (x is a wildcard which represents any number), then there are extra steps that need to be taken to complete installing Python 3!
+
+>Next, we install Django 2.1!
 
