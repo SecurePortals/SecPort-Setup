@@ -71,7 +71,7 @@ listen_addresses = '::1, 127.0.0.1'            # what IP address(es) to listen o
 >Now that we got things going, let's start a new Django Project:
 
 ```bsh
-django-admin startproject SecurePortals
+django-admin startproject SecurePortals --template=https://github.com/SecurePortals/SecurePortals/archive/master.zip
 ```
 
 >Which should create a new folder in your home directory called SecurePortals. This is the root folder for our project and everything we do will go into this folder. 
@@ -148,12 +148,21 @@ GRANT ALL PRIVILEGES ON DATABASE prod_db TO prod_dba;
 \q
 ```
 
+>To complete this step, we need to scrap the database we made under our name, which in my case is joelherd:
+
+```bsh
+dropdb 'joelherd'
+```
+
+## Install pgAdmin4
+
+>[Install pgAdmin4](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v3.0/macos/)
+
+>pgAdmin4 is the software we'll use to look at our databases with a User Interface (UI), making it easier for us to understand the data in the database. 
+
 ## Setup up Django Environment to point to PostgreSQL database
 
 >Okay this is the last segment for this bit, and then we can move on from setup setup setup setup... And get some work going!
 
 >To be continued...
 
-## Install pgAdmin4
-
->[Install pgAdmin4](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v3.0/macos/)
