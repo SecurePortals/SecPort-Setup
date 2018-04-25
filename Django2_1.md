@@ -7,6 +7,7 @@
 4. Set up Pycharm Interpreter
 5. Create PostgreSQL Database
 6. Setup up Django Environment to point to PostgreSQL database
+7. Install pgAdmin4
 
 >And we're going to do a lot of back and forth in order to accomplish this, and will probably use Google a lot, but hey, that's how things go. I spent about a day going around between a lot of different blogs and documentation, and can't remember the exact steps I took in order to get mine to work, but this was the general workflow that got things to work for me.
 
@@ -151,3 +152,8 @@ GRANT ALL PRIVILEGES ON DATABASE prod_db TO prod_dba;
 
 >Okay this is the last segment for this bit, and then we can move on from setup setup setup setup... And get some work going!
 
+>To be continued...
+
+## Install pgAdmin4
+
+>[Install pgAdmin4](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v3.0/macos/)
