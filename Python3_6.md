@@ -63,8 +63,8 @@ brew postinstall python
 ```bsh
 python --version
 ```
->If it doesn't say Python 3.6.x (x is a wildcard which represents any number), then there are extra steps that need to be taken to complete installing Python 3! You may have to go back to the Install Python steps, but instead of installing 'python', install 'python3'.
+>If it doesn't say Python 3.6.x (x is a wildcard which represents any number), then there are extra steps that need to be taken to complete installing Python 3! You may have to go back to the 'Installing Python' steps, but instead of installing 'python', install 'python3'.
 
 
->Next, we install Django 2.1!
+>Next, we install Django!
 
