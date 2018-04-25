@@ -5,7 +5,7 @@
 2. Install Django
 3. Install Postgres
 4. Set up Pycharm Interpreter
-5. Create PostgreSQL Database (run my script)
+5. Create PostgreSQL Database
 6. Setup up Django Environment to point to PostgreSQL database
 
 >And we're going to do a lot of back and forth in order to accomplish this, and will probably use Google a lot, but hey, that's how things go. I spent about a day going around between a lot of different blogs and documentation, and can't remember the exact steps I took in order to get mine to work, but this was the general workflow that got things to work for me.
@@ -86,7 +86,68 @@ django-admin startproject SecurePortals
 
 ## Create PostgreSQL Database
 
+>Whew! Almost there. We now will dive into creating our database.
+
+## Quck note on SQL
+
+>SQL stands for Structured Query Language, and is a very popular languaged used to interact with Relational Database Management Systems (RDMS). A RDMS is basically a database composed of tables, which each have a unique 'Primary Key' which identifies each record, and often has a 'Foreign Key' which comes from the 'Primary Key' from another table. This is where the 'relation' comes from, and it connects the data that exists in one table, to another. 
+
+>So we have to first initialize PostgreSQL, so that it will launch whenever we start up the computer (This command should only be run once):
+
 ```bsh
 pg_ctl -D /usr/local/var/postgres start && brew services start postgresql
 ```
+
+>Then we need to engage in the instance of PostgreSQL that we have running, and enter some code:
+
+```bsh
+createdb
+```
+```bsh
+psql -h localhost
+```
+
+>And now we should see something that looks like (except instead of joelherd you should see your own admin/login name):
+
+```bsh
+Joels-MacBook-Pro:~ joelherd$ psql -h localhost
+psql (10.3)
+Type "help" for help.
+
+joelherd=# 
+```
+
+>We are now inside PostgreSQL! This is super great. We're going to kick off the following commands, and we're going to have a database!
+
+```bsh
+CREATE DATABASE dev_db;
+CREATE DATABASE eval_db;
+CREATE DATABASE test_db;
+CREATE DATABASE prod_db;
+CREATE ROLE dev_dba WITH LOGIN PASSWORD 'devdba1337';
+CREATE ROLE prod_dba WITH LOGIN PASSWORD 'proddba1337';
+GRANT ALL PRIVILEGES ON DATABASE dev_db TO dev_dba;
+GRANT ALL PRIVILEGES ON DATABASE eval_db TO dev_dba;
+GRANT ALL PRIVILEGES ON DATABASE test_db TO prod_dba;
+GRANT ALL PRIVILEGES ON DATABASE prod_db TO prod_dba;
+```
+
+>If you notice, the sytax we're using in these commands is different then the syntax we used earlier, and that's because we're no longer coding in Bash, but instead in SQL! Cool stuff.
+
+>Confirm your tables and users exist by entering:
+
+```bsh
+\list
+\du
+```
+
+>And when you're ready to quit:
+
+```bsh
+\q
+```
+
+## Setup up Django Environment to point to PostgreSQL database
+
+>Okay this is the last segment for this bit, and then we can move on from setup setup setup setup... And get some work going!
 
