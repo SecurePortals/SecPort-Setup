@@ -1,6 +1,6 @@
-# Updating Local Repository
+# Updating Local/Master Repository
 
-> This task can be accomplished using the following commands:
+> The task of 'pushing' changes made in your local repository to the master repository can be executed as so:
 
 ![repoPic](https://github.com/SecurePortals/SecPort-Setup/blob/master/Documentation/UpdateLocalRepo.png)
 
@@ -12,20 +12,23 @@ cd SecPort-Setup
 
 > From our HOME directory (Which is usually the root User folder for your login on your computer). 
 
-## Recap: 
+## Updating Local Repository: 
 
 ```bsh
 git pull
 ```
 
+## Pushing updates to local repo to master repo:
+
+```bsh
+git pull
+```
 ```bsh
 git add -A
 ```
-
 ```bsh
 git commit -m "<add a message that describes the changes"
 ```
-
 ```bsh
 git push
 ```
