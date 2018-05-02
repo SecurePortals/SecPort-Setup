@@ -2,7 +2,7 @@
 
 > The task of 'pushing' changes made in your local repository to the master repository can be executed as so:
 
-![repoPic](https://github.com/SecurePortals/SecPort-Setup/blob/master/Documentation/UpdateLocalRepo.png)
+![repoPic](https://github.com/SecurePortals/SecPort-Setup/blob/master/Documentation/PNG/UpdateLocalRepo.png)
 
 > But it's important to note that you need to be inside the directory that you're updating. In order to step into the directory for SecPort-Setup, we need to:
 
