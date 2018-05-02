@@ -11,3 +11,21 @@ cd SecPort-Setup
 ```
 
 > From our HOME directory (Which is usually the root User folder for your login on your computer). 
+
+## Recap: 
+
+```bsh
+git pull
+```
+
+```bsh
+git add -A
+```
+
+```bsh
+git commit -m "<add a message that describes the changes"
+```
+
+```bsh
+git push
+```
