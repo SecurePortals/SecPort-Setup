@@ -27,7 +27,7 @@ git pull
 git add -A
 ```
 ```bsh
-git commit -m "<add a message that describes the changes"
+git commit -m "<add a message that describes the changes>"
 ```
 ```bsh
 git push
