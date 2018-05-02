@@ -2,7 +2,7 @@
 
 > So far, this is what our database design looks like:
 
-![Image](https://github.com/SecurePortals/SecPort-Setup/blob/master/Documentation/ERD5.2.png)
+![Image](https://github.com/SecurePortals/SecPort-Setup/blob/master/Documentation/PNG/ERD5.2.png)
 
 > So let's break down each of these tables and what kind of data will be in each of them. 
 
