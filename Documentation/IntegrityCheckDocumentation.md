@@ -11,7 +11,8 @@
 2. Does every PROPERTY have a valid OWNER_ID?
 3. Does every UNIT have a valid PROPERTY_ID?
 4. Does every TENANT have a valid LEASE_ID?
-5. More...
+
+> We will add more to this script as we expand our checks as we develop the product. 
 
 ## Business Rules
 
